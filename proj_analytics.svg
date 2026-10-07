@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="anBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <linearGradient id="purplePink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="rgba(99, 102, 241, 0.2)"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#anBg)"/>
+
+  <!-- Top App Navigation Bar -->
+  <rect x="25" y="20" width="750" height="46" rx="8" fill="rgba(30, 41, 59, 0.45)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <circle cx="50" cy="43" r="5" fill="#ef4444"/>
+  <circle cx="66" cy="43" r="5" fill="#f59e0b"/>
+  <circle cx="82" cy="43" r="5" fill="#10b981"/>
+  <text x="110" y="48" fill="#e2e8f0" font-family="'Outfit', sans-serif" font-size="13" font-weight="700">DEV METRICS // OBSERVABILITY CONSOLE</text>
+  <rect x="540" y="30" width="100" height="26" rx="6" fill="rgba(99, 102, 241, 0.15)"/>
+  <text x="590" y="47" fill="#818cf8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle" font-weight="600">LIVE FEED ●</text>
+  <rect x="655" y="30" width="105" height="26" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <text x="707" y="47" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11" text-anchor="middle">v2.4 Production</text>
+
+  <!-- Metric Widget 1 -->
+  <rect x="25" y="80" width="230" height="100" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <text x="45" y="108" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="500">APM Throughput</text>
+  <text x="45" y="145" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="28" font-weight="800">42.8k <tspan font-size="14" fill="#34d399">req/s</tspan></text>
+  <path d="M 180 145 Q 195 125, 210 135 T 235 115" fill="none" stroke="#34d399" stroke-width="2.5"/>
+
+  <!-- Metric Widget 2 -->
+  <rect x="270" y="80" width="245" height="100" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <text x="290" y="108" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="500">Service Mesh Uptime</text>
+  <text x="290" y="145" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="28" font-weight="800">99.998%</text>
+  <circle cx="480" cy="130" r="16" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4"/>
+  <circle cx="480" cy="130" r="16" fill="none" stroke="#6366f1" stroke-width="4" stroke-dasharray="85 100"/>
+
+  <!-- Metric Widget 3 -->
+  <rect x="530" y="80" width="245" height="100" rx="12" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+  <text x="550" y="108" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="12" font-weight="500">Memory Utilization</text>
+  <text x="550" y="145" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="28" font-weight="800">3.4 <tspan font-size="14" fill="#94a3b8">/ 16 GB</tspan></text>
+  <rect x="670" y="125" width="85" height="10" rx="5" fill="rgba(255,255,255,0.1)"/>
+  <rect x="670" y="125" width="28" height="10" rx="5" fill="#06b6d4"/>
+
+  <!-- Central Real-time Multi-Series Chart Card -->
+  <rect x="25" y="196" width="500" height="234" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.09)" stroke-width="1"/>
+  <text x="45" y="228" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="15" font-weight="700">Cluster Latency &amp; Memory Streaming</text>
+  
+  <!-- Grid Lines in Chart -->
+  <g stroke="rgba(255, 255, 255, 0.05)" stroke-width="1">
+    <line x1="45" y1="260" x2="505" y2="260"/>
+    <line x1="45" y1="300" x2="505" y2="300"/>
+    <line x1="45" y1="340" x2="505" y2="340"/>
+    <line x1="45" y1="380" x2="505" y2="380"/>
+  </g>
+
+  <!-- Area Gradient Fill -->
+  <defs>
+    <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(99, 102, 241, 0.4)"/>
+      <stop offset="100%" stop-color="rgba(99, 102, 241, 0.0)"/>
+    </linearGradient>
+  </defs>
+  <path d="M 45 360 C 90 320, 130 350, 180 290 C 230 230, 280 320, 340 270 C 400 220, 450 250, 505 240 L 505 380 L 45 380 Z" fill="url(#areaFill)"/>
+  <path d="M 45 360 C 90 320, 130 350, 180 290 C 230 230, 280 320, 340 270 C 400 220, 450 250, 505 240" fill="none" stroke="#818cf8" stroke-width="3"/>
+
+  <!-- Second Line Series (Cyan) -->
+  <path d="M 45 375 C 90 355, 140 370, 200 330 C 260 290, 310 340, 370 300 C 430 260, 470 290, 505 280" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="4 2"/>
+
+  <!-- Right Distribution Bars Card -->
+  <rect x="540" y="196" width="235" height="234" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.09)" stroke-width="1"/>
+  <text x="560" y="228" fill="#f8fafc" font-family="'Outfit', sans-serif" font-size="14" font-weight="700">Workload by Region</text>
+
+  <!-- Bar 1 -->
+  <text x="560" y="262" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">US-East (N. Virginia)</text>
+  <rect x="560" y="272" width="195" height="12" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <rect x="560" y="272" width="168" height="12" rx="6" fill="url(#purplePink)"/>
+
+  <!-- Bar 2 -->
+  <text x="560" y="312" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">EU-Central (Frankfurt)</text>
+  <rect x="560" y="322" width="195" height="12" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <rect x="560" y="322" width="135" height="12" rx="6" fill="url(#cyanBlue)"/>
+
+  <!-- Bar 3 -->
+  <text x="560" y="362" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">AP-South (Mumbai)</text>
+  <rect x="560" y="372" width="195" height="12" rx="6" fill="rgba(255,255,255,0.06)"/>
+  <rect x="560" y="372" width="92" height="12" rx="6" fill="#10b981"/>
+
+  <text x="560" y="412" fill="#64748b" font-family="'Inter', sans-serif" font-size="11">Automated Multi-Region Balancing Active</text>
+</svg>
